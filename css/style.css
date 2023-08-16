@@ -1,0 +1,200 @@
+/* ========================== */
+/* ======== Header ========== */
+/* ========================== */
+.header {
+  padding: 15px 0;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-item-group {
+  display: flex;
+  align-items: center;
+  gap: var(--item-gap);
+}
+.nav-item-logo {
+  height: 50px;
+}
+.nav-item-cart {
+  border: 0.125rem solid var(--color-yellow);
+  border-radius: var(--radius-border);
+  padding: 0.4rem 1rem;
+}
+/* ========================== */
+/* ======== Banner ========== */
+/* ========================== */
+.banner {
+  color: var(--color-white);
+  height: 600px;
+  background: url("../images/banner-backgroud.avif") no-repeat;
+  background-size: cover;
+}
+.banner-content {
+  padding-top: 150px;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.banner-title {
+  display: flex;
+  flex-direction: column;
+  gap: var(--item-gap);
+  font-size: 1.2rem;
+  width: 50%;
+}
+.banner-title h1 {
+  font-size: 4rem;
+}
+.banner-btn {
+  text-align: center;
+  width: 25%;
+  background-color: var(--color-yellow);
+  text-transform: uppercase;
+}
+/* ========================== */
+/* ======== Category ========== */
+/* ========================== */
+.category-list {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.item-img-container {
+  height: 70%;
+  border: 1px solid black;
+}
+.category-list-item p {
+  margin-top: 20px;
+  text-align: center;
+}
+/* ========================== */
+/* ======== Product ========== */
+/* ========================== */
+.product-section {
+  display: flex;
+  justify-content: space-between;
+}
+.product-filter {
+  width: 18%;
+}
+.filter-caption {
+  background-color: var(--color-yellow);
+  padding: 0.75rem 1.5rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+.filter-body {
+  background-color: var(--color-light-grey);
+  padding: 0 1.5rem;
+}
+.filter-item {
+  padding: 1rem 0;
+  cursor: pointer;
+  display: flex;
+  gap: 0.75rem;
+}
+.filter-item::before {
+  content: "";
+  display: none;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-yellow);
+  border-radius: var(--radius-border);
+  margin-top: 5px;
+}
+.filter-item:hover {
+  font-weight: bold;
+}
+.filter-item:hover::before {
+  display: block;
+}
+.filter-item:not(:last-child) {
+  border-bottom: rgb(234, 234, 234) 0.1rem solid;
+}
+.product-list {
+  margin: auto 0;
+  width: 80%;
+}
+.product-item {
+  position: relative;
+  height: 100%;
+  display: flex;
+}
+.product-img-container {
+  width: 85%;
+  height: 85%;
+  margin: auto;
+  border: black 1px solid;
+}
+.product-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: auto;
+  padding: 0 2rem;
+}
+.product-btn {
+  text-align: center;
+  width: 50%;
+}
+.product-list .row:first-child .product-item:first-child:before {
+  content: "sold out";
+  text-transform: uppercase;
+  color: var(--color-white);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 10%;
+  height: 10%;
+  display: block;
+  background-color: var(--color-light-red);
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.6rem 0.2rem 0.6rem;
+  font-size: 0.65rem;
+  text-align: center;
+}
+/* ========================== */
+/* ======== Gallery ========== */
+/* ========================== */
+.gallery-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.gallery-item {
+  width: 17%;
+}
+.gallery-img-container {
+  height: 400px;
+}
+.gallery-desc {
+  margin: 20px auto;
+  width: 50%;
+  border: var(--color-yellow) 0.1rem solid;
+  border-radius: var(--radius-border);
+  padding: 0.25rem;
+  text-align: center;
+}
+.gallery-item:nth-child(2n) {
+  display: flex;
+  flex-direction: column-reverse;
+}
+/* ========================== */
+/* ======== Footer ========== */
+/* ========================== */
+.footer {
+  height: 30vh;
+  background-color: var(--color-yellow);
+  padding-top: 100px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--item-gap);
+  text-align: center;
+  font-size: 1.5rem;
+}

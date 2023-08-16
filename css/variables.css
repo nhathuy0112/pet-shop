@@ -1,0 +1,13 @@
+:root {
+  --color-white: #fff;
+  --color-yellow: rgb(253, 180, 81);
+  --color-red: rgb(227, 63, 69);
+  --color-black: #000;
+  --color-light-grey: rgb(249, 249, 249);
+  --color-light-red: rgb(227, 63, 69);
+
+  --radius-border: 5rem;
+  --margin-top-section: 30px;
+
+  --item-gap: 0.75rem;
+}

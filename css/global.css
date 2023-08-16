@@ -1,0 +1,37 @@
+li {
+  list-style-type: none;
+}
+.text-yellow {
+  color: var(--color-yellow);
+}
+.btn {
+  border: 0.1rem solid var(--color-yellow);
+  border-radius: var(--radius-border);
+  padding: 0.65rem 0.75rem;
+  cursor: pointer;
+}
+.center {
+  width: 85%;
+  margin: 0 auto;
+}
+.divider {
+  width: 10rem;
+  height: 3px;
+  background-color: var(--color-yellow);
+  margin: 20px auto 50px auto;
+}
+.title {
+  text-align: center;
+  font-size: 2rem;
+}
+.row {
+  display: flex;
+  padding: 0.75rem 0;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+section {
+  margin-bottom: 90px;
+}
