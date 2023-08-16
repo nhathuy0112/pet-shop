@@ -4,24 +4,19 @@
 .header {
   padding: 15px 0;
 }
-.nav-list {
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.nav-list {
+  display: flex;
+  gap: var(--item-gap);
+  align-items: center;
   cursor: pointer;
 }
-.nav-item-group {
-  display: flex;
-  align-items: center;
-  gap: var(--item-gap);
-}
-.nav-item-logo {
+.header-logo-container {
   height: 50px;
-}
-.nav-item-cart {
-  border: 0.125rem solid var(--color-yellow);
-  border-radius: var(--radius-border);
-  padding: 0.4rem 1rem;
 }
 /* ========================== */
 /* ======== Banner ========== */
